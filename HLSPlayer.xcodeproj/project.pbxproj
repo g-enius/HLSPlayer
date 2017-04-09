@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		566DD4391E99CB7400CF0E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 566DD4381E99CB7400CF0E92 /* main.m */; };
+		566DD43C1E99CB7400CF0E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 566DD43B1E99CB7400CF0E92 /* AppDelegate.m */; };
+		566DD43F1E99CB7400CF0E92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566DD43E1E99CB7400CF0E92 /* ViewController.m */; };
+		566DD4421E99CB7400CF0E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DD4401E99CB7400CF0E92 /* Main.storyboard */; };
+		566DD4441E99CB7400CF0E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566DD4431E99CB7400CF0E92 /* Assets.xcassets */; };
+		566DD4471E99CB7400CF0E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566DD4451E99CB7400CF0E92 /* LaunchScreen.storyboard */; };
+		566DD4521E99CB7400CF0E92 /* HLSPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 566DD4511E99CB7400CF0E92 /* HLSPlayerTests.m */; };
+		566DD45D1E99CB7400CF0E92 /* HLSPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 566DD45C1E99CB7400CF0E92 /* HLSPlayerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		566DD44E1E99CB7400CF0E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566DD42C1E99CB7400CF0E92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 566DD4331E99CB7400CF0E92;
+			remoteInfo = HLSPlayer;
+		};
+		566DD4591E99CB7400CF0E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566DD42C1E99CB7400CF0E92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 566DD4331E99CB7400CF0E92;
+			remoteInfo = HLSPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		566DD4341E99CB7400CF0E92 /* HLSPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLSPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566DD4381E99CB7400CF0E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		566DD43A1E99CB7400CF0E92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		566DD43B1E99CB7400CF0E92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		566DD43D1E99CB7400CF0E92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		566DD43E1E99CB7400CF0E92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		566DD4411E99CB7400CF0E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566DD4431E99CB7400CF0E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566DD4461E99CB7400CF0E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		566DD4481E99CB7400CF0E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566DD44D1E99CB7400CF0E92 /* HLSPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLSPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566DD4511E99CB7400CF0E92 /* HLSPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLSPlayerTests.m; sourceTree = "<group>"; };
+		566DD4531E99CB7400CF0E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566DD4581E99CB7400CF0E92 /* HLSPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLSPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566DD45C1E99CB7400CF0E92 /* HLSPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLSPlayerUITests.m; sourceTree = "<group>"; };
+		566DD45E1E99CB7400CF0E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566DD4311E99CB7400CF0E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD44A1E99CB7400CF0E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD4551E99CB7400CF0E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		566DD42B1E99CB7400CF0E92 = {
+			isa = PBXGroup;
+			children = (
+				566DD4361E99CB7400CF0E92 /* HLSPlayer */,
+				566DD4501E99CB7400CF0E92 /* HLSPlayerTests */,
+				566DD45B1E99CB7400CF0E92 /* HLSPlayerUITests */,
+				566DD4351E99CB7400CF0E92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		566DD4351E99CB7400CF0E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566DD4341E99CB7400CF0E92 /* HLSPlayer.app */,
+				566DD44D1E99CB7400CF0E92 /* HLSPlayerTests.xctest */,
+				566DD4581E99CB7400CF0E92 /* HLSPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566DD4361E99CB7400CF0E92 /* HLSPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				566DD43A1E99CB7400CF0E92 /* AppDelegate.h */,
+				566DD43B1E99CB7400CF0E92 /* AppDelegate.m */,
+				566DD43D1E99CB7400CF0E92 /* ViewController.h */,
+				566DD43E1E99CB7400CF0E92 /* ViewController.m */,
+				566DD4401E99CB7400CF0E92 /* Main.storyboard */,
+				566DD4431E99CB7400CF0E92 /* Assets.xcassets */,
+				566DD4451E99CB7400CF0E92 /* LaunchScreen.storyboard */,
+				566DD4481E99CB7400CF0E92 /* Info.plist */,
+				566DD4371E99CB7400CF0E92 /* Supporting Files */,
+			);
+			path = HLSPlayer;
+			sourceTree = "<group>";
+		};
+		566DD4371E99CB7400CF0E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				566DD4381E99CB7400CF0E92 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		566DD4501E99CB7400CF0E92 /* HLSPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				566DD4511E99CB7400CF0E92 /* HLSPlayerTests.m */,
+				566DD4531E99CB7400CF0E92 /* Info.plist */,
+			);
+			path = HLSPlayerTests;
+			sourceTree = "<group>";
+		};
+		566DD45B1E99CB7400CF0E92 /* HLSPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				566DD45C1E99CB7400CF0E92 /* HLSPlayerUITests.m */,
+				566DD45E1E99CB7400CF0E92 /* Info.plist */,
+			);
+			path = HLSPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		566DD4331E99CB7400CF0E92 /* HLSPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566DD4611E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayer" */;
+			buildPhases = (
+				566DD4301E99CB7400CF0E92 /* Sources */,
+				566DD4311E99CB7400CF0E92 /* Frameworks */,
+				566DD4321E99CB7400CF0E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLSPlayer;
+			productName = HLSPlayer;
+			productReference = 566DD4341E99CB7400CF0E92 /* HLSPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		566DD44C1E99CB7400CF0E92 /* HLSPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566DD4641E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerTests" */;
+			buildPhases = (
+				566DD4491E99CB7400CF0E92 /* Sources */,
+				566DD44A1E99CB7400CF0E92 /* Frameworks */,
+				566DD44B1E99CB7400CF0E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566DD44F1E99CB7400CF0E92 /* PBXTargetDependency */,
+			);
+			name = HLSPlayerTests;
+			productName = HLSPlayerTests;
+			productReference = 566DD44D1E99CB7400CF0E92 /* HLSPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		566DD4571E99CB7400CF0E92 /* HLSPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566DD4671E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerUITests" */;
+			buildPhases = (
+				566DD4541E99CB7400CF0E92 /* Sources */,
+				566DD4551E99CB7400CF0E92 /* Frameworks */,
+				566DD4561E99CB7400CF0E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566DD45A1E99CB7400CF0E92 /* PBXTargetDependency */,
+			);
+			name = HLSPlayerUITests;
+			productName = HLSPlayerUITests;
+			productReference = 566DD4581E99CB7400CF0E92 /* HLSPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566DD42C1E99CB7400CF0E92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Charles;
+				TargetAttributes = {
+					566DD4331E99CB7400CF0E92 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					566DD44C1E99CB7400CF0E92 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 566DD4331E99CB7400CF0E92;
+					};
+					566DD4571E99CB7400CF0E92 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 566DD4331E99CB7400CF0E92;
+					};
+				};
+			};
+			buildConfigurationList = 566DD42F1E99CB7400CF0E92 /* Build configuration list for PBXProject "HLSPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 566DD42B1E99CB7400CF0E92;
+			productRefGroup = 566DD4351E99CB7400CF0E92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				566DD4331E99CB7400CF0E92 /* HLSPlayer */,
+				566DD44C1E99CB7400CF0E92 /* HLSPlayerTests */,
+				566DD4571E99CB7400CF0E92 /* HLSPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		566DD4321E99CB7400CF0E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566DD4471E99CB7400CF0E92 /* LaunchScreen.storyboard in Resources */,
+				566DD4441E99CB7400CF0E92 /* Assets.xcassets in Resources */,
+				566DD4421E99CB7400CF0E92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD44B1E99CB7400CF0E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD4561E99CB7400CF0E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566DD4301E99CB7400CF0E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566DD43F1E99CB7400CF0E92 /* ViewController.m in Sources */,
+				566DD43C1E99CB7400CF0E92 /* AppDelegate.m in Sources */,
+				566DD4391E99CB7400CF0E92 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD4491E99CB7400CF0E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566DD4521E99CB7400CF0E92 /* HLSPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566DD4541E99CB7400CF0E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566DD45D1E99CB7400CF0E92 /* HLSPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		566DD44F1E99CB7400CF0E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 566DD4331E99CB7400CF0E92 /* HLSPlayer */;
+			targetProxy = 566DD44E1E99CB7400CF0E92 /* PBXContainerItemProxy */;
+		};
+		566DD45A1E99CB7400CF0E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 566DD4331E99CB7400CF0E92 /* HLSPlayer */;
+			targetProxy = 566DD4591E99CB7400CF0E92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		566DD4401E99CB7400CF0E92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566DD4411E99CB7400CF0E92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		566DD4451E99CB7400CF0E92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566DD4461E99CB7400CF0E92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		566DD45F1E99CB7400CF0E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		566DD4601E99CB7400CF0E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		566DD4621E99CB7400CF0E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLSPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		566DD4631E99CB7400CF0E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLSPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		566DD4651E99CB7400CF0E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HLSPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLSPlayer.app/HLSPlayer";
+			};
+			name = Debug;
+		};
+		566DD4661E99CB7400CF0E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HLSPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLSPlayer.app/HLSPlayer";
+			};
+			name = Release;
+		};
+		566DD4681E99CB7400CF0E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLSPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLSPlayer;
+			};
+			name = Debug;
+		};
+		566DD4691E99CB7400CF0E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLSPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Charles.HLSPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLSPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566DD42F1E99CB7400CF0E92 /* Build configuration list for PBXProject "HLSPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566DD45F1E99CB7400CF0E92 /* Debug */,
+				566DD4601E99CB7400CF0E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566DD4611E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566DD4621E99CB7400CF0E92 /* Debug */,
+				566DD4631E99CB7400CF0E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		566DD4641E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566DD4651E99CB7400CF0E92 /* Debug */,
+				566DD4661E99CB7400CF0E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		566DD4671E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566DD4681E99CB7400CF0E92 /* Debug */,
+				566DD4691E99CB7400CF0E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 566DD42C1E99CB7400CF0E92 /* Project object */;
+}
