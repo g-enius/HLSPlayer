@@ -509,6 +509,7 @@
 				566DD4631E99CB7400CF0E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		566DD4641E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				566DD4661E99CB7400CF0E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		566DD4671E99CB7400CF0E92 /* Build configuration list for PBXNativeTarget "HLSPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				566DD4691E99CB7400CF0E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
