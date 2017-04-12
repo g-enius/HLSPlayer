@@ -156,13 +156,16 @@
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-qs-iGw">
                                             <rect key="frame" x="89" y="229.5" width="278" height="34"/>
                                         </progressView>
-                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saa-Rq-KUE">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saa-Rq-KUE">
                                             <rect key="frame" x="154" y="106" width="66" height="66"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="66" id="BtA-6O-0z0"/>
                                                 <constraint firstAttribute="width" constant="66" id="ObV-By-S8w"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="video_play_btn_bg"/>
+                                            <connections>
+                                                <action selector="playButtonInCellTapped:" destination="KZI-pM-0SX" eventType="touchUpInside" id="BGu-Sr-8Nk"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -191,6 +194,7 @@
                                     <outlet property="backgroundImageView" destination="0IH-Sr-mlA" id="dQI-Qw-ey3"/>
                                     <outlet property="descriptionLabel" destination="hSw-tp-X9W" id="bSs-nc-plV"/>
                                     <outlet property="downLoadButton" destination="4gP-Kz-WSg" id="jnW-lk-JaL"/>
+                                    <outlet property="playButton" destination="saa-Rq-KUE" id="Jol-z4-vRq"/>
                                     <outlet property="progressView" destination="zAx-qs-iGw" id="lWo-wu-Wfl"/>
                                     <outlet property="titleLabel" destination="K6O-uf-hJi" id="clD-1W-Wff"/>
                                 </connections>
@@ -230,6 +234,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EcE-QC-DIi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="B95-1U-1AU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

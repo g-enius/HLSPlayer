@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 @class VideoModel;
+@class AVPlayer;
+@class AVPlayerLayer;
 
 @interface VideoCell : UITableViewCell
 
++ (NSMutableDictionary *)sharedCacheDic;
+
 - (void)configWithModel:(VideoModel *) model;
 
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @end
