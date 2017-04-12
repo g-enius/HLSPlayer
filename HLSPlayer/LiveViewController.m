@@ -1,27 +1,25 @@
 //
-//  ViewController.m
+//  LiveViewController.m
 //  HLSPlayer
 //
-//  Created by Charles on 9/04/17.
+//  Created by Charles on 12/04/17.
 //  Copyright © 2017 Charles. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LiveViewController.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController () <UITableViewDelegate>
+@interface LiveViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -32,7 +30,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-
+    
     AVPlayerViewController *avVC = [[AVPlayerViewController alloc]init];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     __block NSString *urlString = @"";
