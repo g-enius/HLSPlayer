@@ -17,5 +17,6 @@
 @property (nonatomic, copy) NSString *mp4_url;
 @property (nonatomic, copy) NSString *m3u8Hd_url;
 @property (nonatomic, copy) NSString *m3u8_url;
+@property (nonatomic, assign) float progress;
 
 @end

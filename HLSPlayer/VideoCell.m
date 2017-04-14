@@ -8,15 +8,15 @@
 
 #import "VideoCell.h"
 #import "VideoModel.h"
-#import <AVFoundation/AVFoundation.h>
 
 @interface VideoCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-@property (weak, nonatomic) IBOutlet UIButton *downLoadButton;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (nonatomic, copy) NSString *imageURL;
+@property (nonatomic, copy) NSString *videoURL;
+
 
 @end
 
@@ -37,6 +37,8 @@
     self.titleLabel.text = model.title;
     self.descriptionLabel.text = model.topicDesc;
     self.imageURL = model.cover;
+    self.videoURL = model.m3u8_url;
+    self.progressView.progress = model.progress;//TODO REUSE
     
     if ([[VideoCell sharedCacheDic] objectForKey:self.imageURL]) {
         self.backgroundImageView.image = [[VideoCell sharedCacheDic] objectForKey:self.imageURL];
@@ -56,6 +58,24 @@
                 }
             });
         });
+    }
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *m3u8FilePath = [NSString stringWithFormat:@"%@/%@/index.m3u8", DownloadFolder, URL_UUID(model.m3u8_url)];
+    
+    if([fileManager fileExistsAtPath:m3u8FilePath]) {
+        self.downLoadButton.enabled = NO;
+        [self.downLoadButton setTitle:@"Downloaded" forState:UIControlStateNormal];
+        [self.downLoadButton setBackgroundColor:[UIColor redColor]];
+    } else if (model.progress > 0) {
+        self.downLoadButton.enabled = NO;
+        [self.downLoadButton setTitle:@"Downloading" forState:UIControlStateNormal];
+        [self.downLoadButton setBackgroundColor:[UIColor whiteColor]];
+        
+    } else {
+        self.downLoadButton.enabled = YES;
+        [self.downLoadButton setTitle:@"Download" forState:UIControlStateNormal];
+        [self.downLoadButton setBackgroundColor:[UIColor whiteColor]];
     }
 }
 

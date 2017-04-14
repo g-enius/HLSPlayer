@@ -146,15 +146,21 @@
                                             <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Sr-mlA">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Sr-mlA">
                                             <rect key="frame" x="8" y="48" width="359" height="181.5"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-Kz-WSg">
-                                            <rect key="frame" x="8" y="237.5" width="73" height="26"/>
-                                            <state key="normal" title="DownLoad"/>
+                                            <rect key="frame" x="8" y="237.5" width="89" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="89" id="B0A-Az-cy1"/>
+                                            </constraints>
+                                            <state key="normal" title="Download"/>
+                                            <connections>
+                                                <action selector="DownloadVideo:" destination="KZI-pM-0SX" eventType="touchUpInside" id="Ugg-kQ-GQo"/>
+                                            </connections>
                                         </button>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-qs-iGw">
-                                            <rect key="frame" x="89" y="229.5" width="278" height="34"/>
+                                            <rect key="frame" x="105" y="229.5" width="262" height="34"/>
                                         </progressView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saa-Rq-KUE">
                                             <rect key="frame" x="154" y="106" width="66" height="66"/>
@@ -164,7 +170,7 @@
                                             </constraints>
                                             <state key="normal" title="Button" image="video_play_btn_bg"/>
                                             <connections>
-                                                <action selector="playButtonInCellTapped:" destination="KZI-pM-0SX" eventType="touchUpInside" id="BGu-Sr-8Nk"/>
+                                                <action selector="playButtonInCellTapped:" destination="KZI-pM-0SX" eventType="touchUpInside" id="RAA-b7-yIh"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -205,7 +211,13 @@
                             <outlet property="delegate" destination="KZI-pM-0SX" id="NjN-qb-KO9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="VOD" id="Hbj-Cw-Zl5"/>
+                    <navigationItem key="navigationItem" title="VOD" id="Hbj-Cw-Zl5">
+                        <barButtonItem key="rightBarButtonItem" title="Clear Caches" id="B1B-OG-oMc">
+                            <connections>
+                                <action selector="CleanCache:" destination="KZI-pM-0SX" id="kIE-lb-mgA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wej-MN-ke5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

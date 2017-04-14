@@ -1,0 +1,17 @@
+//
+//  HLSPlayer-prefix.pch
+//  HLSPlayer
+//
+//  Created by Charles on 14/04/17.
+//  Copyright © 2017 Charles. All rights reserved.
+//
+
+#ifndef HLSPlayer_prefix_h
+#define HLSPlayer_prefix_h
+
+#define URL_UUID(URL) URL.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent.lastPathComponent
+#define DownloadFolder [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0] stringByAppendingPathComponent:kPathDownload]
+#define kPathDownload @"Downloads"
+
+
+#endif /* HLSPlayer_prefix_h */

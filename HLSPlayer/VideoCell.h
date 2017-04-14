@@ -10,15 +10,19 @@
 @class VideoModel;
 @class AVPlayer;
 @class AVPlayerLayer;
+@class VideoCell;
+
 
 @interface VideoCell : UITableViewCell
 
 + (NSMutableDictionary *)sharedCacheDic;
 
-- (void)configWithModel:(VideoModel *) model;
+- (void)configWithModel:(VideoModel *)model;
 
+@property (weak, nonatomic) IBOutlet UIButton *downLoadButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
+
 @end
